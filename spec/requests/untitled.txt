@@ -1,0 +1,141 @@
+mp4-mob-low
+{"add-hint-tracks"            : true,
+        "qmc-muxer"                  : "mp4",
+        "qmc-audio-encoder"          : "aac",
+        "max-width"                  : 176,
+        "max-height"                 : 144,
+        "video-bitrate-max"          : 150,
+        "video-bitrate-min"          : 100,
+        "video-bitrate-ratio"        : 1.5,
+        "av-delay-pcm-ms"            : -1.0,
+        "keyframe-interval-ms"       : 3000,
+        "audio-samplerate"           : 8000,
+        "enable-hq-mode"             : true,
+        "deblocking-strength"        : 0,
+        "resize-method"              : "inscribe",
+        "qmc-video-encoder"          : "mpeg4",
+        "conditional-params"         : [
+        {
+          "name"                     : "Audio 22050 Hz",
+          "audio-samplerate"         : 22050,
+          "audio-bitrate"            : 32,
+          "c-input-audio-samplerate" : 22050
+        },
+        {
+          "name"                     : "Audio 44100 Hz",
+          "audio-samplerate"         : 44100,
+          "audio-bitrate"            : 64,
+          "c-input-audio-samplerate" : 44100
+        },
+        {
+          "name"                     : "Audio 48000 Hz",
+          "audio-samplerate"         : 48000,
+          "audio-bitrate"            : 64,
+          "c-input-audio-samplerate" : 48000
+        }]}
+
+mp4-mob-medium
+{"add-hint-tracks"            : true,
+        "qmc-muxer"                  : "mp4",
+        "qmc-audio-encoder"          : "aac",
+        "max-width"                  : 320,
+        "max-height"                 : 240,
+        "video-bitrate-max"          : 300,
+        "video-bitrate-min"          : 100,
+        "video-bitrate-ratio"        : 1.5,
+        "av-delay-pcm-ms"            : -1.0,
+        "keyframe-interval-ms"       : 3000,
+        "audio-samplerate"           : 8000,
+        "enable-hq-mode"             : true,
+        "deblocking-strength"        : 0,
+        "resize-method"              : "inscribe",
+        "qmc-video-encoder"          : "mpeg4",
+        "conditional-params"         : [
+        {
+          "name"                     : "Audio 22050 Hz",
+          "audio-samplerate"         : 22050,
+          "audio-bitrate"            : 32,
+          "c-input-audio-samplerate" : 22050
+        },
+        {
+          "name"                     : "Audio 44100 Hz",
+          "audio-samplerate"         : 44100,
+          "audio-bitrate"            : 64,
+          "c-input-audio-samplerate" : 44100
+        },
+        {
+          "name"                     : "Audio 48000 Hz",
+          "audio-samplerate"         : 48000,
+          "audio-bitrate"            : 64,
+          "c-input-audio-samplerate" : 48000
+        }]}
+
+mp4-mob-high
+{"add-hint-tracks"            : true,
+        "qmc-muxer"                  : "mp4",
+ 
+  "qmc-audio-encoder"          : "aac",
+        "max-width"                  : 480,
+        "max-height"                 : 360,
+        "video-bitrate-max"          : 450,
+        "video-bitrate-min"          : 100,
+        "video-bitrate-ratio"        : 1.5,
+        "av-delay-pcm-ms"            : -1.0,
+        "keyframe-interval-ms"       : 3000,
+        "audio-samplerate"           : 8000,
+        "enable-hq-mode"             : true,
+        "deblocking-strength"        : 0,
+        "resize-method"              : "inscribe",
+        "qmc-video-encoder"          : "mpeg4",
+
+"video-out-port"             : 0,
+"audio-out-port"             : 0,
+ "conditional-params"         : [
+        {
+          "name"                     : "Audio 22050 Hz",
+          "audio-samplerate"         : 22050,
+          "audio-bitrate"            : 32,
+          "c-input-audio-samplerate" : 22050
+        },
+        {
+          "name"                     : "Audio 44100 Hz",
+          "audio-samplerate"         : 44100,
+          "audio-bitrate"            : 64,
+          "c-input-audio-samplerate" : 44100
+        },
+        {
+          "name"                     : "Audio 48000 Hz",
+          "audio-samplerate"         : 48000,
+          "audio-bitrate"            : 64,
+          "c-input-audio-samplerate" : 48000
+        }]}
+
+rtsp-mob-low
+{"audio-bitrate"         : 24,
+        "video-bitrate"         : 100,
+        "width"                 : 176,
+        "height"                : 144,
+        "output-file"           : "dummy",
+        "qmc-demuxer"           : "live",
+        "qmc-muxer"             : "rtsp",
+        "qmc-video-encoder"     : "h264",
+        "video-encoder-preset"  : "compatible",
+        "audio-rtp-payload-type": 98,
+        "video-rtp-payload-type": 97,
+        "qmc-audio-encoder"     : "aac",
+        "ff-to-eos"             : true}
+
+rtsp-mob-medium
+{"audio-bitrate"         : 24,
+        "video-bitrate"         : 250,
+        "max-width"             : 320,
+        "max-height"            : 240,
+        "output-file"           : "dummy",
+        "qmc-demuxer"           : "live",
+        "qmc-muxer"             : "rtsp",
+        "qmc-video-encoder"     : "h264",
+        "video-encoder-preset"  : "compatible",
+        "audio-rtp-payload-type": 98,
+        "video-rtp-payload-type": 97,
+        "qmc-audio-encoder"     : "aac",
+        "ff-to-eos"             : true} 
